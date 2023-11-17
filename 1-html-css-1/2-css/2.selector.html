@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selectors */
+        body {
+            background-color: #333;
+        }
+        h2#green-heading {
+            color: green;
+        }
+        /* . is for Classes */
+        #blue-heading {
+            color: blue;
+        }
+        /* # is for IDs */
+        .blue-paragraph {
+            color: blue;
+        }
+        .secondary-heading {
+            color: red;
+        }
+        #about {
+            background-color: #f4f4f4;
+        }
+        /* Multiple Selectors */
+        #welcome,
+        #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        /* Nested Selectors */
+        #welcome p {
+            font-size: 20px;
+        }
+
+        #about2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 id="green-heading">Welcome</h2>
+        <p class="blue-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos repudiandae ipsa, obcaecati commodi id sit ullam rerum provident explicabo.</p>
+    </div>
+    <div id="about">
+        <h2 class="secondary-heading">About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quis similique iusto laudantium maxime voluptatum architecto iste aliquid consequuntur excepturi.</p>
+    </div>
+    <div>
+        <h2 id="about">About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quis similique iusto laudantium maxime voluptatum architecto iste aliquid consequuntur excepturi.</p>
+    </div>
+    <div id="about2">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quis similique iusto laudantium maxime voluptatum architecto iste aliquid consequuntur excepturi.</p>
+    </div>
+    <div id="about3">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quis similique iusto laudantium maxime voluptatum architecto iste aliquid consequuntur excepturi.</p>
+    </div>
+</body>
+</html>
