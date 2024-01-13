@@ -1,0 +1,50 @@
+// Variables
+$primary: #3299ef;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// Color palette
+$colors: (
+    primary: $primary,
+    secondary: $secondary,
+    error: $error,
+    info: $info,
+    blue: #1919e6,
+    red: #e61919,
+    yelow: #e6e619,
+    green: #19e635,
+    orange: #ffa600,
+    purple: #9900ff,
+    gray: #808080,
+    black: #000000,
+    white: #ffffff,
+);
+
+.test-btn {
+    background-color: map-get($colors, purple);
+}
+
+@debug map-get($colors, purple);
+@debug map-has-key($colors, gray);
+@debug map-has-key($colors, maroon);
+@debug map-remove($colors, primary);
+@debug map-merge($colors, (maroon: #800000));
+
+// Spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// Borders
+$base-border-radius: 1rem;
+$base-border-thickness: 1px;
+
+// Box shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// Font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.50;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
